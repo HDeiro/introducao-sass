@@ -1,0 +1,25 @@
+/**
+O Sass permite a criação de variáveis no padrão PHP 
+(precedido de $).
+
+Os tipos suportados são:
+
+- Números
+- Strings
+- Cores
+- Booleanos
+- Nulo
+- Lista de Valores
+- Mapas
+*/
+
+$var_num: 10;
+$var_string: 'string var';
+$var_color_1: #fff;
+$var_color_2: white;
+$var_color_3: rgb(255,255,255);
+$var_color_4: rgba(255, 255, 255, 1);
+$var_boolean: true;
+$var_null: null;
+$var_list: 1, 2, 3, 'value', true, rgb(12, 12, 12);
+$var_map: (property_a: 10, property_b: 11, property_c: red);
