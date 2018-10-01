@@ -1,0 +1,21 @@
+/**
+No Sass é possível criar procedimentos, chamados Mixins.
+
+Os mixins podem ser utilizados para as mais diversas finalidades, 
+sendo reutilizados ao longo do código.
+*/
+
+@mixin radialize($radius) {
+    border-radius: $radius;
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+}
+
+.box {
+    @include radialize(6px);
+}
+
+.other-box {
+    @include radialize(20px);
+}
