@@ -1,0 +1,28 @@
+/**
+    O Sass também suporta a utilização de loops
+*/
+
+//For Loop
+@for $i from 1 through 4 {
+    //Interpolação
+    .for-class-#{$i} {
+        width: 60px * $i;
+    }
+}
+
+//Foreach Loop
+$list: (item: a, value: 10), (item: b, value: 20);
+@each $item in $list {
+    .foreach-class-#{map_get($item, item)} {
+        width: map_get($item, value);
+    }
+}
+
+//While loop
+$i: 0;
+@while $i < 5 {
+    .while-class-#{$i} {
+        width: $i;
+    }
+    $i: $i + 1;
+}
