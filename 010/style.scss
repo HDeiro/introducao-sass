@@ -1,0 +1,19 @@
+/**
+O Sass suporta mecanismos de controle de decisão, o que
+facilita bastante controle de templates.
+*/
+
+$template: dark;
+
+header {
+    @if $template == dark {
+        color: white;
+        background: black;
+    } @else if $template == light {
+        color: black;
+        background: white;
+    } @else {
+        color: darkgoldenrod;
+        background: darkcyan;
+    }
+}
