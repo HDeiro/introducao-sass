@@ -1,0 +1,31 @@
+/**
+O Sass permite a utilização de nested selectors para facilitar o controle 
+de hierarquias no CSS.
+
+Apesar de ser uma funcionalidade legal, sugere-se manter o limite de 
+três níveis de hierarquias para evitar um código desnecessariamente complexo
+*/
+
+.card {
+    width: 300px;
+    height: 200px;
+    border-radius: 6px;
+    background: whitesmoke;
+    position: relative;
+
+    &-title {
+        font-size: 16px;
+        font-weight: 400;
+        color: #444;
+    }
+
+    &-fab {
+        width: 60px;
+        height: 60px;
+        background: gray;
+        border-radius: 100%;
+        position: absolute;
+        top: -30px;
+        right: -30px;
+    }
+}
