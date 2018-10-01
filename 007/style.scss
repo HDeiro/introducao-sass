@@ -1,0 +1,23 @@
+/**
+    O SASS suporta as operações básicas da matemática,
+    sendo elas:
+
+    - Adição (+)
+    - Subtração (-)
+    - Multiplicação (*)
+    - Divisão (/)
+    - Módulo (%)
+*/
+
+$soma: 10 + 20;
+$subtracao: 20 - 10;
+$multiplicacao: 2 * 10;
+$divisao: 20 / 2;
+$modulo: 20 % 2;
+
+/**
+É possível, ainda, utilizar grandezas nas operações, como pixel, pontos, em, etc.
+*/
+
+$soma_px: 20px + 2px;
+$multiplicacao_em: 10em * 4;
