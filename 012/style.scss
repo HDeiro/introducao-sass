@@ -1,0 +1,16 @@
+/**
+    As media queries podem ser utilizadas com a notação de
+    nested selector
+*/
+
+.container {
+    width: 1000px;
+
+    @media screen and (max-width: 320px) {
+        width: 200px;
+    }
+
+    @media screen and (max-width: 800px) {
+        width: 300px;
+    }
+}
