@@ -1,0 +1,26 @@
+/**
+Podemos definir estilos de geração de código
+
+sass style.scss:style.css --style DESIRED_STYLE
+
+Os estilos podem ser:
+
+    - compressed (minificado)
+    - compact (minificado com quebra de linha)
+    - nested (organiza o código por hierarquias)
+    - expanded (default)
+
+Dependendo da distribuição do Sass (Ruby, Dart, Node etc), alguns dos estilos pode não estar disponível.
+*/
+
+.container {
+    background: red;
+}
+
+.container-item {
+    color: white;
+}
+
+.container-item-bold{
+    font-weight: 600;
+}
