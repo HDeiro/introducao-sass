@@ -1,0 +1,9 @@
+/**
+    É possível importar outros arquivos do Sass, gerando um único CSS.
+*/
+
+@import "_dependency";
+
+.container {
+    background: white;
+}
