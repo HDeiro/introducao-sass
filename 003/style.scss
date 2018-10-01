@@ -13,6 +13,9 @@ três níveis de hierarquias para evitar um código desnecessariamente complexo
     background: whitesmoke;
     position: relative;
 
+    /**
+        Pode-se utilizar "&" para referenciar o elemento pai
+    */
     &-title {
         font-size: 16px;
         font-weight: 400;
@@ -27,5 +30,9 @@ três níveis de hierarquias para evitar um código desnecessariamente complexo
         position: absolute;
         top: -30px;
         right: -30px;
+
+        &-icon {
+            color: black;
+        }
     }
 }
