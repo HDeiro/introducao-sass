@@ -1,0 +1,19 @@
+/**
+Além dos mixins, existem também as functions.
+
+Apesar de serem parecidas, as functions apenas retornam um valor, 
+diferente dos mixins que aplicam todo bloco de código onde quer
+que o mixin tenha sido invocado.
+*/
+
+@function calc-fluid($target, $container) {
+    @return ($target / $container) * 100%;
+}
+
+.div {
+    width: calc-fluid(650px, 1000px);
+}
+
+.other-div {
+    width: calc-fluid(800px, 1050px);
+}
